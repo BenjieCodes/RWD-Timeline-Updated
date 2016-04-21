@@ -3,10 +3,12 @@
 .container {
   max-width: 1100px;
   margin: 0 auto;
+  overflow: auto;
 
-  .section {
-    width: 70%;
+  li {
+    width: 100%;
     list-style: none;
+    overflow: auto;
 
   .timeline {
     width: 10%;
@@ -20,8 +22,8 @@
   }
 
   .iconcontainer {
+    margin-left: 70%;
     width: 20%;
-    float: right;
     text-align: center;
     margin-bottom: 15px;
     position: relative;
@@ -59,12 +61,25 @@
   }
 
   .box {
+    margin-right: 15%;
     float: right;
+    width: 70%;
     background: RGBA(108, 191, 238, 1.00);
     border: 1px solid black;
     border-radius: 4px;
+    position: relative;
 
-
+    h3::before {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 15px 15px 15px;
+      border-color: transparent transparent #000000 transparent;
+      content: "";
+      position: absolute;
+      top: -16px;
+      left: 25px;
+    }
 
   }
 
