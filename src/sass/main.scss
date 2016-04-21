@@ -9,6 +9,7 @@
     width: 100%;
     list-style: none;
     overflow: auto;
+    margin-top: 40px;
 
   .timeline {
     float: left;
@@ -18,12 +19,14 @@
       color: RGBA(213, 225, 232, 1.00);
     }
     .time {
+      font-size: 25px;
       color: RGBA(108, 191, 238, 1.00);
     }
 
   }
 
   .iconcontainer {
+    margin-top: 20px;
     margin-left: 70%;
     width: 20%;
     text-align: center;
@@ -86,5 +89,14 @@
   }
 
 }
+
+}
+
+@media screen and (min-width: 500px) {
+
+  body {
+  background: black;
+}
+
 
 }
