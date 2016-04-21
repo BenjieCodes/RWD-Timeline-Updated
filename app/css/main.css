@@ -1,0 +1,43 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto; }
+  .container .section {
+    width: 70%;
+    list-style: none; }
+    .container .section .timeline {
+      width: 10%; }
+      .container .section .timeline .date {
+        color: RGBA(213, 225, 232, 1); }
+      .container .section .timeline .time {
+        color: RGBA(108, 191, 238, 1); }
+    .container .section .iconcontainer {
+      width: 20%;
+      float: right;
+      text-align: center;
+      margin-bottom: 15px;
+      position: relative; }
+      .container .section .iconcontainer .outercircle {
+        background: black;
+        border-radius: 100%;
+        width: 45px;
+        height: 45px; }
+        .container .section .iconcontainer .outercircle .innercircle {
+          background: red;
+          border-radius: 100%;
+          height: 32px;
+          width: 32px;
+          position: absolute;
+          top: 6px;
+          left: 6px; }
+          .container .section .iconcontainer .outercircle .innercircle .logo .fa {
+            color: white;
+            position: absolute;
+            top: 7px;
+            left: 8px; }
+    .container .section .box {
+      float: right;
+      background: RGBA(108, 191, 238, 1);
+      border: 1px solid black;
+      border-radius: 4px; }
+
+/*# sourceMappingURL=main.css.map */
