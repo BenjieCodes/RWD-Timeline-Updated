@@ -11,6 +11,8 @@
     overflow: auto;
 
   .timeline {
+    float: left;
+    margin-left: 18%;
     width: 10%;
     .date {
       color: RGBA(213, 225, 232, 1.00);
