@@ -5,13 +5,17 @@
   overflow: auto;
 
   li {
+    margin: 20px 0;
     width: 100%;
     list-style: none;
     overflow: auto;
+    position: relative;
 
   .timeline {
     margin-left: 18%;
     width: 10%;
+    position: absolute;
+
     .date {
       color: RGBA(213, 225, 232, 1.00);
     }
@@ -23,7 +27,7 @@
   }
 
   .iconcontainer {
-    margin-left: 70%;
+    margin-left: 74%;
     width: 20%;
     text-align: center;
     position: relative;
@@ -70,6 +74,15 @@
     border-radius: 4px;
     position: relative;
 
+    h3 {
+      padding: 3%;
+      border-bottom: 1px solid black;
+    }
+
+    p {
+      padding: 3%;
+    }
+
     h3::before {
       width: 0;
       height: 0;
@@ -94,42 +107,38 @@
 
 body {
     background: lightgrey;
+
+.section {
     position: relative;
-
-
-
-li::before {
-  background: black;
-  width: 8px;
-  height: 100%;
-  content: " ";
-  display: block;
-  position: absolute;
-  left: 118px;
-
-
-}
-
-.box {
-}
-
+  }
 
   .timeline {
     position: absolute;
-    top: 64px;
-    left: -16%;
+    top: 67px;
+    left: -18%;
   }
 
 
 
   .iconcontainer {
     position: absolute;
-    top: 64px;
-    left: -55%;
+    top: 67px;
+    left: -61%;
   }
 
+  // .iconcontainer::before {
+  //   background: black;
+  //   width: 8px;
+  //   height: 100%;
+  //   content: "asdfsdafasdf";
+  //   display: block;
+  //   top: 20px;
+  //   overflow: hidden;
+  // }
+
   .box {
-    position:absolute;
+    position: absolute;
+    top: 0px;
     left: 10%;
 
       h3::before {
@@ -152,7 +161,28 @@ li::before {
 }
 
 @media screen and (min-width: 800px) {
-body {
-  background: red;
-}
+
+  body {
+    background: white;
+
+  }
+  .section {
+      position: relative;
+    }
+
+    .timeline {
+      position: absolute;
+      top: 64px;
+      left: -18%;
+    }
+
+
+
+    .iconcontainer {
+      position: absolute;
+      top: 64px;
+      left: -61%;
+    }
+
+
 }

@@ -3,19 +3,22 @@
   margin: 0 auto;
   overflow: auto; }
   .container li {
+    margin: 20px 0;
     width: 100%;
     list-style: none;
-    overflow: auto; }
+    overflow: auto;
+    position: relative; }
     .container li .timeline {
       margin-left: 18%;
-      width: 10%; }
+      width: 10%;
+      position: absolute; }
       .container li .timeline .date {
         color: RGBA(213, 225, 232, 1); }
       .container li .timeline .time {
         font-size: 25px;
         color: RGBA(108, 191, 238, 1); }
     .container li .iconcontainer {
-      margin-left: 70%;
+      margin-left: 74%;
       width: 20%;
       text-align: center;
       position: relative; }
@@ -46,6 +49,11 @@
       border: 1px solid black;
       border-radius: 4px;
       position: relative; }
+      .container li .box h3 {
+        padding: 3%;
+        border-bottom: 1px solid black; }
+      .container li .box p {
+        padding: 3%; }
       .container li .box h3::before {
         width: 0;
         height: 0;
@@ -59,26 +67,20 @@
 
 @media screen and (min-width: 500px) {
   body {
-    background: lightgrey;
-    position: relative; }
-    body li::before {
-      background: black;
-      width: 8px;
-      height: 100%;
-      content: " ";
-      display: block;
-      position: absolute;
-      left: 118px; }
+    background: lightgrey; }
+    body .section {
+      position: relative; }
     body .timeline {
       position: absolute;
-      top: 64px;
-      left: -16%; }
+      top: 67px;
+      left: -18%; }
     body .iconcontainer {
       position: absolute;
-      top: 64px;
-      left: -55%; }
+      top: 67px;
+      left: -61%; }
     body .box {
       position: absolute;
+      top: 0px;
       left: 10%; }
       body .box h3::before {
         display: none; }
@@ -95,6 +97,16 @@
 
 @media screen and (min-width: 800px) {
   body {
-    background: blue; } }
+    background: white; }
+  .section {
+    position: relative; }
+  .timeline {
+    position: absolute;
+    top: 64px;
+    left: -18%; }
+  .iconcontainer {
+    position: absolute;
+    top: 64px;
+    left: -61%; } }
 
 /*# sourceMappingURL=main.css.map */
