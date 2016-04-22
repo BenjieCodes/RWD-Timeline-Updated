@@ -108,21 +108,13 @@
 body {
     background: lightgrey;
 
-.section {
-    position: relative;
-  }
-
   .timeline {
-    position: absolute;
-    top: 67px;
+    top: 64px;
     left: -18%;
   }
 
-
-
   .iconcontainer {
-    position: absolute;
-    top: 67px;
+    top: 64px;
     left: -61%;
   }
 
@@ -137,7 +129,6 @@ body {
   // }
 
   .box {
-    position: absolute;
     top: 0px;
     left: 10%;
 
@@ -167,21 +158,23 @@ body {
 
   }
   .section {
-      position: relative;
+    width: 100%;
     }
 
     .timeline {
-      position: absolute;
-      top: 64px;
-      left: -18%;
+
+      .date {
+
+      }
+      .time {
+
+      }
     }
 
 
 
     .iconcontainer {
-      position: absolute;
-      top: 64px;
-      left: -61%;
+      right: 30px;
     }
 
 

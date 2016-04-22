@@ -68,18 +68,13 @@
 @media screen and (min-width: 500px) {
   body {
     background: lightgrey; }
-    body .section {
-      position: relative; }
     body .timeline {
-      position: absolute;
-      top: 67px;
+      top: 64px;
       left: -18%; }
     body .iconcontainer {
-      position: absolute;
-      top: 67px;
+      top: 64px;
       left: -61%; }
     body .box {
-      position: absolute;
       top: 0px;
       left: 10%; }
       body .box h3::before {
@@ -99,14 +94,8 @@
   body {
     background: white; }
   .section {
-    position: relative; }
-  .timeline {
-    position: absolute;
-    top: 64px;
-    left: -18%; }
+    width: 100%; }
   .iconcontainer {
-    position: absolute;
-    top: 64px;
-    left: -61%; } }
+    right: 30px; } }
 
 /*# sourceMappingURL=main.css.map */
