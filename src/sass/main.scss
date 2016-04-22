@@ -1,22 +1,18 @@
 
 
 .container {
-  max-width: 1100px;
+  max-width: 100%;
   margin: 0 auto;
   overflow: auto;
   position: relative;
 
   .section {
     margin: 0 auto;
-
-
-  }
-
-  li {
-    margin: 20px 0;
     width: 100%;
+    margin: 20px 0;
     list-style: none;
     overflow: auto;
+
 
   .timeline {
 
@@ -104,7 +100,7 @@
       border-color: transparent transparent #000000 transparent;
       content: "";
       position: absolute;
-      top: 87px;
+      top: 107px;
       left: 91px;
     }
 
@@ -120,41 +116,33 @@
 body {
     background: lightgrey;
 }
-    .section {
-      position: relative;
+
+    .timeline {
+      display: inline;
+      overflow: auto;
+      margin-top: 45px;
     }
 
-  .timeline {
-    position: absolute;
-    top: 100px;
-    left: -18%;
+    .iconcontainer {
+      position: absolute;
+      top: 153px;
+      right: 68%;
+      float: left;
 
-  }
+    }
 
-  .iconcontainer {
-    position: absolute;
-    top: 100px;
-    left: -63%;
 
-  }
-
-  // .iconcontainer::before {
-  //   background: black;
-  //   width: 8px;
-  //   height: 100%;
-  //   content: "asdfsdafasdf";
-  //   display: block;
-  //   top: 20px;
-  //   overflow: hidden;
-  // }
 
   .box {
-    right: 30px;
+    position: relative;
+    float: right;
+    margin-right: 6%;
   }
 
       h3::before {
         display: none;
       }
+
       h3::after {
         width: 0;
         height: 0;
@@ -163,8 +151,8 @@ body {
         border-color: transparent #000000 transparent transparent;
         content: "";
         position: absolute;
-        top: 100px;
-        left: 71px;
+        top: 8px;
+        left: -16px;
     }
 
 }

@@ -1,36 +1,35 @@
 .container {
-  max-width: 1100px;
+  max-width: 100%;
   margin: 0 auto;
   overflow: auto;
   position: relative; }
   .container .section {
-    margin: 0 auto; }
-  .container li {
-    margin: 20px 0;
+    margin: 0 auto;
     width: 100%;
+    margin: 20px 0;
     list-style: none;
     overflow: auto; }
-    .container li .timeline {
+    .container .section .timeline {
       width: 10%;
       margin-left: 18%;
       margin-top: 34px; }
-      .container li .timeline .date {
+      .container .section .timeline .date {
         color: RGBA(213, 225, 232, 1); }
-      .container li .timeline .time {
+      .container .section .timeline .time {
         font-size: 25px;
         color: RGBA(108, 191, 238, 1); }
-    .container li .iconcontainer {
+    .container .section .iconcontainer {
       margin-top: -28px;
       margin-left: 74%;
       width: 20%;
       text-align: center;
       position: absolute; }
-      .container li .iconcontainer .outercircle {
+      .container .section .iconcontainer .outercircle {
         background: black;
         border-radius: 100%;
         width: 45px;
         height: 45px; }
-        .container li .iconcontainer .outercircle .innercircle {
+        .container .section .iconcontainer .outercircle .innercircle {
           background: red;
           border-radius: 100%;
           height: 32px;
@@ -38,24 +37,24 @@
           position: absolute;
           top: 6px;
           left: 6px; }
-          .container li .iconcontainer .outercircle .innercircle .logo .fa {
+          .container .section .iconcontainer .outercircle .innercircle .logo .fa {
             color: white;
             position: absolute;
             top: 7px;
             left: 8px; }
-    .container li .box {
+    .container .section .box {
       width: 70%;
       background: RGBA(108, 191, 238, 1);
       border: 1px solid black;
       border-radius: 4px;
       margin-left: 17%;
       margin-top: 21px; }
-    .container li h3 {
+    .container .section h3 {
       padding: 3%;
       border-bottom: 1px solid black; }
-    .container li p {
+    .container .section p {
       padding: 3%; }
-    .container li h3::before {
+    .container .section h3::before {
       width: 0;
       height: 0;
       border-style: solid;
@@ -63,24 +62,25 @@
       border-color: transparent transparent #000000 transparent;
       content: "";
       position: absolute;
-      top: 87px;
+      top: 107px;
       left: 91px; }
 
 @media screen and (min-width: 500px) and (max-width: 800px) {
   body {
     background: lightgrey; }
-  .section {
-    position: relative; }
   .timeline {
-    position: absolute;
-    top: 100px;
-    left: -18%; }
+    display: inline;
+    overflow: auto;
+    margin-top: 45px; }
   .iconcontainer {
     position: absolute;
-    top: 100px;
-    left: -63%; }
+    top: 153px;
+    right: 68%;
+    float: left; }
   .box {
-    right: 30px; }
+    position: relative;
+    float: right;
+    margin-right: 6%; }
   h3::before {
     display: none; }
   h3::after {
@@ -91,7 +91,7 @@
     border-color: transparent #000000 transparent transparent;
     content: "";
     position: absolute;
-    top: 100px;
-    left: 71px; } }
+    top: 8px;
+    left: -16px; } }
 
 /*# sourceMappingURL=main.css.map */
