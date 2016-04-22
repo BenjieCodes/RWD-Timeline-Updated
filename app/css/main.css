@@ -2,12 +2,14 @@
   max-width: 1100px;
   margin: 0 auto;
   overflow: auto; }
+  .container .section {
+    position: relative;
+    overflow: auto; }
   .container li {
     margin: 20px 0;
     width: 100%;
     list-style: none;
-    overflow: auto;
-    position: relative; }
+    overflow: auto; }
     .container li .timeline {
       margin-left: 18%;
       width: 10%;
@@ -21,12 +23,13 @@
       margin-left: 74%;
       width: 20%;
       text-align: center;
-      position: relative; }
+      position: absolute; }
       .container li .iconcontainer .outercircle {
         background: black;
         border-radius: 100%;
         width: 45px;
-        height: 45px; }
+        height: 45px;
+        position: absolute; }
         .container li .iconcontainer .outercircle .innercircle {
           background: red;
           border-radius: 100%;
@@ -41,61 +44,54 @@
             top: 7px;
             left: 8px; }
     .container li .box {
-      margin-top: 20px;
-      margin-right: 15%;
-      float: right;
       width: 70%;
+      top: 100px;
+      left: 100px;
       background: RGBA(108, 191, 238, 1);
       border: 1px solid black;
-      border-radius: 4px;
-      position: relative; }
-      .container li .box h3 {
-        padding: 3%;
-        border-bottom: 1px solid black; }
-      .container li .box p {
-        padding: 3%; }
-      .container li .box h3::before {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 15px 15px 15px;
-        border-color: transparent transparent #000000 transparent;
-        content: "";
-        position: absolute;
-        top: -16px;
-        left: 25px; }
+      border-radius: 4px; }
+    .container li h3 {
+      padding: 3%;
+      border-bottom: 1px solid black; }
+    .container li p {
+      padding: 3%; }
+    .container li h3::before {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 15px 15px 15px;
+      border-color: transparent transparent #000000 transparent;
+      content: "";
+      position: absolute;
+      top: 45px;
+      left: 91px; }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 500px) and (max-width: 800px) {
   body {
     background: lightgrey; }
-    body .timeline {
-      top: 64px;
-      left: -18%; }
-    body .iconcontainer {
-      top: 64px;
-      left: -61%; }
-    body .box {
-      top: 0px;
-      left: 10%; }
-      body .box h3::before {
-        display: none; }
-      body .box h3::after {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 15px 15px 15px 0;
-        border-color: transparent #000000 transparent transparent;
-        content: "";
-        position: absolute;
-        top: 6px;
-        left: -15px; } }
-
-@media screen and (min-width: 800px) {
-  body {
-    background: white; }
   .section {
-    width: 100%; }
+    position: relative; }
+  .timeline {
+    position: absolute;
+    top: 100px;
+    left: -18%; }
   .iconcontainer {
-    right: 30px; } }
+    position: absolute;
+    top: 100px;
+    left: -63%; }
+  .box {
+    right: 30px; }
+  h3::before {
+    display: none; }
+  h3::after {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 15px 0;
+    border-color: transparent #000000 transparent transparent;
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 71px; } }
 
 /*# sourceMappingURL=main.css.map */
