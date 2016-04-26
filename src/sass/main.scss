@@ -1,10 +1,10 @@
 
-
 .container {
-  max-width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
   overflow: auto;
   position: relative;
+}
 
   .section {
     margin: 0 auto;
@@ -12,11 +12,11 @@
     margin: 20px 0;
     list-style: none;
     overflow: auto;
-
+  }
 
   .timeline {
     margin-left: 18%;
-
+  }
     .date {
       color: RGBA(213, 225, 232, 1.00);
     }
@@ -25,21 +25,21 @@
       color: RGBA(108, 191, 238, 1.00);
     }
 
-  }
+
 
   .iconcontainer {
     text-align: center;
     position: absolute;
     right: 70px;
     top: 35px;
-
+  }
     .outercircle {
       background: black;
       border-radius: 100%;
       width: 45px;
       height: 45px;
       position: relative;
-
+    }
       .innercircle {
         background: red;
         border-radius: 100%;
@@ -48,20 +48,16 @@
         position: absolute;
         top: 6px;
         left: 6px;
-
+      }
         .logo {
           position: absolute;
           top: 7px;
-          left: 7px;
-
+          left: 8px;
+        }
           .fa {
             color: white;
-
           }
-        }
-      }
-    }
-  }
+
 
   .box {
     background: RGBA(108, 191, 238, 1.00);
@@ -69,32 +65,72 @@
     border-radius: 4px;
     margin: 0 10%;
     margin-top: 21px;
-
-      h3 {
-        padding: 3%;
-        border-bottom: 1px solid black;
-
-
-      p {
-        padding: 3%;
-
-
-      h3::before {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 15px 15px 15px;
-        border-color: transparent transparent #000000 transparent;
-        content: "";
-        position: absolute;
-        top: 73px;
-        left: 91px;
-        }
-      }
-    }
   }
-}
-}
+      h3 {
+        padding: 5%;
+        border-bottom: 1px solid black;
+        text-align: center;
+      }
+      p {
+        padding: 5%;
+        text-align: center;
+      }
+
+
 // //When the screen is at least 500px, this is when the function will run
-// @media screen and (min-width: 500px) and (max-width: 800px)  {
-//
+@media screen and (min-width: 500px) and (max-width: 800px)  {
+
+  body {
+    background: lightgrey;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .container::before{
+    width: 1%;
+    height: 100%;
+    background: black;
+    content: "";
+    position: absolute;
+    left: 101px;
+    overflow: visible;;
+  }
+
+  .section {
+
+  }
+  .timeline {
+
+
+  }
+
+
+  .box {
+    margin-top: 21px;
+    margin-left: 25%;
+    position: relative;
+    float: right;
+  }
+
+  .iconcontainer {
+    position: absolute;
+    top: 10px;
+    left: -70px;
+  }
+
+  h3::before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 15px 0;
+    border-color: transparent #000000 transparent transparent;
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -16px;
+    }
+
+
+}
