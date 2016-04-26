@@ -30,7 +30,7 @@
   .iconcontainer {
     text-align: center;
     position: absolute;
-    right: 70px;
+    right: 95px;
     top: 35px;
   }
     .outercircle {
@@ -38,7 +38,7 @@
       border-radius: 100%;
       width: 45px;
       height: 45px;
-      position: relative;
+      position: absolute;;
     }
       .innercircle {
         background: red;
@@ -78,17 +78,13 @@
 
 
 // //When the screen is at least 500px, this is when the function will run
-@media screen and (min-width: 500px) and (max-width: 800px)  {
-
-  body {
-    background: lightgrey;
-  }
+@media screen and (min-width: 600px) and (max-width: 750px)  {
 
   .container {
     position: relative;
   }
 
-  .container::before{
+  body::before{
     width: 1%;
     height: 100%;
     background: black;
@@ -99,16 +95,18 @@
   }
 
   .section {
-
+    position: relative;
   }
   .timeline {
-
+    position: absolute;
+    top: 80px;
+    left: -130px;
 
   }
 
 
   .box {
-    margin-top: 21px;
+    margin-top: 67px;
     margin-left: 25%;
     position: relative;
     float: right;
@@ -116,8 +114,8 @@
 
   .iconcontainer {
     position: absolute;
-    top: 10px;
-    left: -70px;
+    top: 80px;
+    left: 83px;
   }
 
   h3::before {
@@ -131,6 +129,66 @@
     top: 20px;
     left: -16px;
     }
+
+
+}
+
+@media screen and (min-width: 751px) and (max-width: 1100px) {
+
+  body::before{
+    width: 1%;
+    height: 100%;
+    background: black;
+    content: "";
+    position: absolute;
+    left: 142px;
+    overflow: visible;;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .section {
+    position: relative;
+  }
+  .timeline {
+    position: absolute;
+    top: 80px;
+    left: -130px;
+  }
+
+  .time {
+    font-size: 45px;
+  }
+
+
+  .box {
+    margin-top: 67px;
+    margin-left: 25%;
+    position: relative;
+    float: right;
+  }
+
+  .iconcontainer {
+    position: absolute;
+    top: 80px;
+    left: 124px;
+  }
+
+  h3::before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 15px 0;
+    border-color: transparent #000000 transparent transparent;
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -16px;
+    }
+
+
 
 
 }
