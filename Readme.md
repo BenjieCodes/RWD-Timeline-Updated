@@ -1,11 +1,10 @@
 # Project Description
 
-This is a basic template for starting projects.
+##After completing this assignment, you should…
+
+Understand how to implement a responsive website
+
 
 ## Deployment
 
-To deploy your project just run:
-
-- Make sure you have a lowercase folder name
-- `npm run deploy`
-- You should have a 'surge.sh' link now for your project
+(http://tiy-abrambenjsongsong-rwd-timeline-new.surge.sh)
